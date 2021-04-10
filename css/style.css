@@ -21,7 +21,7 @@ body {
 
 input[type=button] {
     background-color: rgb(42, 226, 149);
-    color: rgb(82, 2, 9);
+    color: #39046d;
     width: 165px;
     height: 100px;
     font-size: 40px;
@@ -30,7 +30,7 @@ input[type=button] {
 
 input[type=text] {
     background-color: rgb(42, 226, 149);
-    color: rgb(82, 2, 9);
+    color: navy;
     width: 500px;
     height: 100px;
     font-size: 40px;
