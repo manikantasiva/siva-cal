@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/cal2.png">
+</head>
+
+<body>
+
+    <div class="content">
+        <table class="tbl">
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="result">
+                </td>
+                <td>
+                    <input type="button" value="C" onclick="clr()" id="clr">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="/" onclick="sol('/')"></td>
+                <td><input type="button" value="*" onclick="sol('*')"></td>
+                <td><input type="button" value="-" onclick="sol('-')"></td>
+                <td><input type="button" value="+" onclick="sol('+')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="sol('7')"></td>
+                <td><input type="button" value="8" onclick="sol('8')"></td>
+                <td><input type="button" value="9" onclick="sol('9')"></td>
+                <td><input type="button" value="." onclick="sol('.')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="sol('4')"></td>
+                <td><input type="button" value="5" onclick="sol('5')"></td>
+                <td><input type="button" value="6" onclick="sol('6')"></td>
+                <td><input type="button" value="=" onclick="sum('=')"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="sol('1')"></td>
+                <td><input type="button" value="2" onclick="sol('2')"></td>
+                <td><input type="button" value="3" onclick="sol('3')"></td>
+                <td><input type="button" value="0" onclick="sol('0')"></td>
+            </tr>
+
+        </table>
+    </div>
+    <script>
+        //  functions of calculator
+
+        function sol(num) {
+            document.getElementById("result").value += num
+        }
+
+        function sum() {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        }
+
+        function clr() {
+            document.getElementById("result").value = ''
+        }
+    </script>
+</body>
+
+</html>
